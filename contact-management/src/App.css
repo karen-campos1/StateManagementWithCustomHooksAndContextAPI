@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ContactList ul {
+  list-style-type: none;  /* Remove bullets */
+  padding: 0;
+}
+
+.ContactList li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.ContactList li:hover {
+  background-color: #e0e0e0;
+}

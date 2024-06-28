@@ -1,0 +1,122 @@
+/* General styles for the app */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styles for the Product List component */
+.ProductList {
+  margin-bottom: 40px;
+}
+
+.ProductList h2 {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.ProductList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ProductList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.ProductList li:hover {
+  background-color: #f1f1f1;
+}
+
+.ProductList button {
+  padding: 8px 12px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ProductList button:hover {
+  background-color: #ff1e38;
+}
+
+/* Styles for the New Product Form component */
+.NewProductForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NewProductForm h2 {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.NewProductForm input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.NewProductForm button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.NewProductForm button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .ProductList li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ProductList button {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
